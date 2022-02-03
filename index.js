@@ -39,3 +39,10 @@ let listFTItem3 = document.createElement('li')
 listFTItem3.textContent = '3:00 pm'
 
 listFeedingTimes.append(listFTItem1, listFTItem2, listFTItem3)
+
+let button = document.createElement('button')
+button.textContent = 'Click me'
+dogDetails.append(button)
+button.addEventListener('click', function(e) {
+    e.target.textContent = "I was clicked!"
+})
